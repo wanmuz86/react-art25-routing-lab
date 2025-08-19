@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
+
 const About:React.FC = () => {
 
   // Retrieving the navigate function from a hook
