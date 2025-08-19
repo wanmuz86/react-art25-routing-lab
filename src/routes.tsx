@@ -3,6 +3,8 @@ import Home from "./Home";
 import About from "./About";
 import AppLayout from "./AppLayout";
 import NotFound from "./NotFound";
+
+// The latest to do in react router v6+
 export const router = createBrowserRouter([
  
     {
