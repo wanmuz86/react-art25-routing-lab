@@ -36,17 +36,21 @@ export const router = createBrowserRouter([
                 element:<NotFound/>
             },
             {
+                
                 path:"profile/:userId",
                 element:<ProfileLayout/>,
                 children:[
                     {
-                        index:true, element:<div>Select a tab(Settins or Details)</div>
+                        // localhost:5173/profile/1 -> Another Layout with additional menu
+                        index:true, element:<div>Select a tab(Settings or Details)</div>
                     },
                     {
+                         // localhost:5173/profile/1/settings 
                      path:"settings", element:<Settings/>,
                     
                     },
                     {
+                         // localhost:5173/profile/1/details 
                     path:"details", element:<Details/>
                     }
                 ]

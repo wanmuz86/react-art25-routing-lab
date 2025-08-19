@@ -13,7 +13,7 @@ const AppLayout:React.FC = () => {
         {/* NavLink and Link is the way to navigate from one page to another using SPA */}
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
-        
+
         {/* <li><a href="/about">About page without NavLink</a></li> */}
       </ul>
     </nav>
