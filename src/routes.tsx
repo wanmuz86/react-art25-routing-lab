@@ -3,6 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import AppLayout from "./AppLayout";
 import NotFound from "./NotFound";
+import User from "./User";
 
 // The latest to do in react router v6+
 export const router = createBrowserRouter([
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
                  // localhost:5173/about
                 path:"about",
                 element:<About/>
+            },
+            {
+                path:"user/:userId",
+                element:<User/>
             },
             {
                  // localhost:5173/anything-not-found
